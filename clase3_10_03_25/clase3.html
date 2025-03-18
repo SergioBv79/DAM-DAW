@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase3</title>
+</head>
+<body>
+    <!--encabezado-->
+    <h1> Soy un encabezado 1</h1>
+    <h2> Soy un encabezado 2</h2>
+    <h3> Soy un encabezado 3</h3>
+    <h4> Soy un encabezado 4</h4>
+    <h5> Soy un encabezado 5</h5>
+    <h6> Soy un encabezado 6</h6>
+        <!--solo se pueden poner 6 encabezados-->
+
+    <!--parrafo-->
+    <p>Soy un parrafo de prueba</p>
+
+    <!--Enlace-->
+    <a href="https://google.es">Vete a Google</a><br><!--<br> es un salto de linea. tambien podria haberlo introducido dentro de un parrafo-->
+    <!--tambien puedo usar hr que seria para crear una linea horizontal de separacion-->
+    <hr>
+
+    <!--Imagen desde enlace-->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Wilt_Chamberlain3.jpg/330px-Wilt_Chamberlain3.jpg" alt="Chanberlain en globe trot.." width="100" height="100">
+        <!--Imagen desde directorio local: despues de rsc= control espacio y te detecta el directorio local  y eliges fotografia-->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Lewis_Hamilton_2022_S%C3%A3o_Paulo_Grand_Prix_%2852498120773%29_%28cropped%29.jpg/330px-Lewis_Hamilton_2022_S%C3%A3o_Paulo_Grand_Prix_%2852498120773%29_%28cropped%29.jpg" alt="hamiltono en mercedes" width="100" height="100">
+<hr>
+    <!--Listas-->
+    <!--DESORDENADAS-->
+    <ul>
+        <li>Lunes</li>
+        <li>Sabado</li>
+        <li>Jueves</li>
+        <li>Martes</li>
+    </ul>
+
+    <!--OREDENADAS-->
+    <ol>
+        <li>Lunes</li>
+        <li>Martes</li>
+        <li>Miercoles</li>
+    </ol>
+    
+    <!--Tabla-->
+    <table>
+    <tr><!--Creamos la fila(table row)-->
+        <th> Años</th> <!--titulo encabezado columnas-->
+        <th> Titulos</th>
+        <th> Año debut</th>
+    </tr>
+     <tr>
+        <td>2025</td><!-- Dato en la columnas -->
+        <td>2024</td>
+        <td>2023</td>
+     </tr>   
+    </table>
+
+    <!--Formulario-->
+    <form action="" method="post">
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="nombreformulario" name="nombre">
+        <input type="submit" value="Enviar">
+
+    </form>
+    <div>
+        <p>Soy el contenido de un contenedor</p>
+    </div>
+    <!--estilos de texto-->
+    <p> Quiero que me veas en <em>cursiva</em></p>
+    <p> Quiero que me ves en <strong>negrita</strong></p>
+    <blockquote> "en abril aguas mil"</blockquote>
+
+    <!--<dl> (Definition List):
+    Esta etiqueta define una lista de definiciones. En lugar de usar los típicos <ul> (listas no ordenadas) o <ol> (listas ordenadas), 
+    el <dl> se utiliza para grupos de términos con sus definiciones.
+    <dt> (Definition Term):Se usa para definir el término que será explicado o descrito en la lista
+    <dd> (Definition Description):Se usa para definir o describir el término especificado en <dt>-->
+        
+    <dl>
+        <dt>Perro</dt>
+            <dd>Canis Lupus Familiaris</dd>
+            <dd>Perro comun</dd>
+    </dl>
+    <article>
+        <h2>Titulo del articulo</h2>
+        <p> Contenido del articulo</p>
+    </article>
+
+    <section>
+        <h3>Titulo de mi sección</h3>
+        <p>Contenido de mi seccion</p>
+    </section>
+
+    <header><!--1. <header>:
+        La etiqueta <header> se usa para definir la cabecera de un documento o una sección. Esta cabecera puede contener elementos como títulos, logos, menús de navegación, enlaces de introducción, entre otros. Es importante que <header> se use en la parte superior 
+        de la página o de una sección para indicar que es el encabezado de esa área.-->
+        <h1>Encabezado del header</h1>
+        <nav><!--<nav>:
+        La etiqueta <nav> se usa para envolver los enlaces de navegación en una página web. Esto incluye menús, barras de navegación, enlaces a diferentes secciones de la misma página o de otras páginas. Su propósito es mejorar la accesibilidad y la semántica del sitio, indicando que los 
+        enlaces dentro de ella tienen la intención de navegar entre páginas o secciones.-->
+            <ul>
+                <li><a href="#Inicio">Inicicio</a></li>
+                <li><a href="#Sobre_Nosotros">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <details>
+        <summary>Dame mas info</summary>
+        <p>Aqui vas a encontrar mas informacion adicional</p>
+    </details>
+
+    <video controls>
+        <source src="videos/" type="video/mp4">
+        </video>
+    
+    <audio controls>
+        <source src="audios/" type="audio/mp4">
+    </audio>
+    <footer>
+        <p>Hola soy un footer</p>
+    </footer>
+</body>
+</html>
