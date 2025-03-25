@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFANAS El Puerto y Bahía</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="https://www.afanaselpuertoybahia.es/wp-content/uploads/2015/02/Logo-AFANAS-bandera.png" alt="Logo AFANAS">
+    <h1>AFANAS El Puerto y Bahía</h1>
+    <p>Una entidad comprometida con las personas</p>
+  </header>
+
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#quehacemos">¿Qué hacemos?</a>
+    <a href="#colabora">Colabora</a>
+    <a href="#accesibilidad">Accesibilidad</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Atendemos, apoyamos y acompañamos a personas con discapacidad, mayores y menores</h2>
+  </div>
+
+  <section id="carrusel" class="carrusel">
+    <div class="slide activo">
+      <img src="https://www.afanaselpuertoybahia.es/wp-content/uploads/2024/04/portada2604-1.jpg" alt="Apoyo a personas con discapacidad">
+      <p>Apoyamos con cariño y profesionalidad</p>
+    </div>
+    <div class="slide">
+      <img src="https://www.caritas.org.mx/wp-content/uploads/2021/10/que-es-voluntariado-bg-1.jpg" alt="Voluntariado con personas mayores">
+      <p>El voluntariado transforma vidas</p>
+    </div>
+    <div class="slide">
+      <img src="https://images.unsplash.com/photo-1602180915760-4f3d992216e8" alt="Actividades grupales e inclusión">
+      <p>Actividades para compartir y crecer juntos</p>
+    </div>
+
+    <button class="btn anterior" aria-label="Anterior">⟵</button>
+    <button class="btn siguiente" aria-label="Siguiente">⟶</button>
+  </section>
+
+  <section id="quehacemos" class="section">
+    <h2>¿Qué hacemos?</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/group-foreground-selected.png" alt="Usuarios">
+        <h3>+1000 personas</h3>
+        <p>Reciben apoyos cada año en nuestros centros.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/classroom.png" alt="Centros">
+        <h3>32 centros</h3>
+        <p>Educativos, asistenciales, ocupacionales y más.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/staff.png" alt="Profesionales">
+        <h3>+900 profesionales</h3>
+        <p>Comprometidos con el bienestar y la inclusión.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="lectura-facil">
+    <p><strong>AFANAS</strong> es una asociación que ayuda a personas con discapacidad, personas mayores y menores. Tenemos muchos centros y profesionales que trabajan con cariño para que todas las personas tengan una buena vida.</p>
+  </section>
+
+  <section class="colabora" id="colabora">
+    <h2>Colabora con nosotros</h2>
+    <p>Hazte voluntario/a en uno de nuestros centros, o contribuye económicamente a través de <strong>Bizum</strong> con el código <strong>01234</strong>. También puedes ayudarnos compartiendo nuestra labor.</p>
+    <div class="pictogramas">
+      <img src="https://static.arasaac.org/pictograms/43436/43436_300.png" alt="Voluntariado">
+      <img src="https://static.arasaac.org/pictograms/12465/12465_300.png" alt="Donar dinero">
+      <img src="https://static.arasaac.org/pictograms/37658/37658_300.png" alt="Compartir">
+    </div>
+    <br>
+    <button>Quiero colaborar</button>
+  </section>
+
+  <section class="sostenibilidad">
+    <h2>Compromiso con el entorno</h2>
+    <p>En AFANAS trabajamos con valores de sostenibilidad, inclusión social y responsabilidad medioambiental. Cuidamos a las personas y al planeta.</p>
+  </section>
+
+  <section id="accesibilidad" class="accesibilidad">
+    <h2>Accesibilidad</h2>
+    <p>Hacemos todo lo posible para que nuestra información y nuestros espacios sean fáciles de entender, usar y disfrutar para todas las personas.</p>
+    <button>Ver más opciones de accesibilidad</button>
+  </section>
+
+  <section class="section mapa">
+    <h2>¿Dónde estamos?</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.5021133657266!2d-6.232567384693031!3d36.60469737999845" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section id="contacto" class="contacto">
+    <h2 style="text-align:center; margin-bottom:2rem;">Escríbenos</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo electrónico" required>
+      <textarea rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 AFANAS El Puerto y Bahía · Calle Embalse s/n · El Puerto de Santa María · Tel: 956 54 34 33
+  </footer>
+
+  <script>
+    let indice = 0;
+    const slides = document.querySelectorAll('.slide');
+    const btnAnterior = document.querySelector('.anterior');
+    const btnSiguiente = document.querySelector('.siguiente');
+
+    function mostrarSlide(i) {
+      slides.forEach(slide => slide.classList.remove('activo'));
+      slides[i].classList.add('activo');
+    }
+
+    function siguienteSlide() {
+      indice = (indice + 1) % slides.length;
+      mostrarSlide(indice);
+    }
+
+    function anteriorSlide() {
+      indice = (indice - 1 + slides.length) % slides.length;
+      mostrarSlide(indice);
+    }
+
+    btnSiguiente.addEventListener('click', siguienteSlide);
+    btnAnterior.addEventListener('click', anteriorSlide);
+
+    setInterval(siguienteSlide, 6000);
+  </script>
+</body>
+</html>
